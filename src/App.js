@@ -8,8 +8,8 @@ import ButtonBox from './components/buttons/buttons';
 function App() {
   return (
     <Fragment className="App">
-     
-     <div className='Box'>
+     <h1>Something went wrong .Please try after sometime.</h1>
+     {/* <div className='Box'>
        <Title/>
        
       <InputBox/>
@@ -17,7 +17,7 @@ function App() {
       <ButtonBox/>
       </div>
       
-       </div>
+       </div> */}
       
 
     </Fragment>
