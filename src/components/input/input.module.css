@@ -1,0 +1,11 @@
+.InputBox{
+
+    width: 90%;
+    height: 40px;
+   text-align: right;
+   padding:10px;
+   
+   font-size: 2rem;
+   margin: 1px auto;
+    
+}
