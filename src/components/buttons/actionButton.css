@@ -1,0 +1,19 @@
+.actionBtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 150px;
+}
+.Btn{
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    font-size: 1rem;
+    background-color: orange;
+    border: 2px solid red;
+    color: white;
+}
+.Btn:hover{
+    background-color: white;
+    color: red;
+}
