@@ -1,26 +1,32 @@
-import React, { Fragment } from 'react'
-import "./tallyCounter.css"
-import Title from '../components/title/title'
-import InputBox from '../components/input/input'
-import ActionButton from '../components/buttons/actionButton'
+import React, { Fragment, useState } from 'react';
+import "./tallyCounter.css";
+
+import InputBox from '../components/input/input';
+import ActionButton from '../components/buttons/actionButton';
+
 const TallyCounter = () => {
-  return (
-    <Fragment>
-         <div className='Box'>
-       <Title/>
-       
-      <InputBox/>
-      <div className='buttons'>
-      <ActionButton/>
-     <button className='resetButton'>Reset</button>
-     <button className='customButton'>Enter custom value</button>
-     <button className='titlereplaceButton'>Change calculator Name</button>
-     <button className='addCalButton'>Add another calculator</button>
-      </div>
-      
-       </div>
-    </Fragment>
-  )
+    const [input, setinput] = useState('0');
+    const [title, setTitle] = useState("");
+
+    const onResetHandler = () => {
+        setinput('0'); // Reset input to '0'
+    }
+const nameResetHandler=(changedName)=>{
+    setTitle(changedName)
 }
 
-export default TallyCounter
+    return (
+        <Fragment>
+            <div className='Box'>
+
+                <InputBox />
+                <div className='buttons' style={{marginTop:-7}}>
+     
+                    <button className='addCalButton' style={{marginTop:-30}}>Add another calculator</button>
+                    </div>
+            </div>
+        </Fragment>
+    );
+}
+
+export default TallyCounter;

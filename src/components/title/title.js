@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react'
 import classes from "./title.module.css"
-const Title = () => {
+const Title = ({title}) => {
   return (
-    <p className={classes.heading}>Tally Counter</p>
+    <p className={classes.heading}>{title}</p>
   )
 }
 

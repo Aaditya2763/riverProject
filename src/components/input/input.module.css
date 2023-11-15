@@ -9,3 +9,19 @@
    margin: 1px auto;
     
 }
+.resetButton{
+   
+    width: 300px;
+    height: 30px;
+    color:black;
+    border:2px solid orange;
+   background-color: white;
+    font-size: 1rem;
+    border-radius: 5px ;
+  }
+  .resetButton:hover{
+    background-color: orange;
+    color: white;
+   border-radius: 10px ;
+   
+  }
